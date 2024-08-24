@@ -16,45 +16,53 @@ public class Main {
 
         // Задача 2
 
-        System.out.print(number[0] + ", ");
-        System.out.print(number[1] + ", ");
-        System.out.print(number[2]);
+        for (int i = 0; i < number.length; i++) {
+        }
+        System.out.print(Arrays.toString(number));
 
         System.out.println(" ");
 
-        for (double i = 0; i < 2; i++) {
-            System.out.print(number1[(int) i] + ", ");
+        for (double i = 0; i < number1.length; i++) {
         }
-        System.out.print(number1[2]);
+        System.out.print(Arrays.toString(number1));
 
         System.out.println(" ");
 
-        for (int i = 0; i < 5; i++) {
-            System.out.print(number2[i] + ", ");
+        for (int i = 0; i < number2.length; i++) {
         }
-        System.out.print(number2[5]);
+        System.out.print(Arrays.toString(number2));
 
         System.out.println(" ");
 
         // Задача 3
 
-        System.out.print(number[2] + ", ");
-        System.out.print(number[1] + ", ");
-        System.out.print(number[0]);
+        for (int i = number.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(number[i] + ", ");
+            } else {
+                System.out.print(number[i]);
+            }
+        }
 
         System.out.println(" ");
 
-        for (double i = 2; i > 0; i--) {
-            System.out.print(number1[(int) i] + ", ");
+        for (double i = number1.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(number1[(int) i] + ", ");
+            } else {
+                System.out.print(number1[(int) i]);
+            }
         }
-        System.out.print(number1[0]);
 
         System.out.println(" ");
 
-        for (int i = 5; i > 0; i--) {
-            System.out.print(number2[i] + ", ");
+        for (int i = number2.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(number2[i] + ", ");
+            } else {
+                System.out.print(number2[i]);
+            }
         }
-        System.out.print(number2[0]);
 
         System.out.println(" ");
 
@@ -64,7 +72,7 @@ public class Main {
         number3[0] = 1;
         number3[1] = 2;
         number3[2] = 3;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < number3.length; i++) {
             if (number3[i] % 2 == 1) {
                 number3[i] = number3[i] + 1;
             }
